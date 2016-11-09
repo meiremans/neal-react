@@ -17,7 +17,7 @@
     "babel-polyfill": "^6.7.2",
     "bootstrap": ">4.0.0-alpha",
     "classnames": "2.x.x",
-    "react": ">=0.14.7 || >15.0.0-rc"
+    "react": "^15.4.0-rc.4"
   },
   "peerDependencies": {
 
