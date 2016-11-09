@@ -22,7 +22,10 @@ export class Footer extends React.Component {
               <p className="neal-footer-copyright">
                 © {new Date().getFullYear()}, {this.props.brandName}
               </p>
-              {this.props.address}
+              <p>{this.props.address.street}</p>
+              <p>{this.props.address.city}</p>
+              <p>{this.props.address.postalCode}</p>
+              <p>{this.props.address.country}</p>
               <p>
                  <a href={`mailto:${this.props.email}`}>{this.props.email}</a>
               </p>
