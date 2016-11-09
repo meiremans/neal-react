@@ -58,22 +58,22 @@ var Footer = exports.Footer = function (_React$Component) {
                                 this.props.brandName
                             ),
                             _react2.default.createElement(
-                                "p",
+                                "div",
                                 null,
                                 this.props.street
                             ),
                             _react2.default.createElement(
-                                "p",
+                                "div",
                                 null,
                                 this.props.city
                             ),
                             _react2.default.createElement(
-                                "p",
+                                "div",
                                 null,
                                 this.props.postalCode
                             ),
                             _react2.default.createElement(
-                                "p",
+                                "div",
                                 null,
                                 this.props.country
                             ),
