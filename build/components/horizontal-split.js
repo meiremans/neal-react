@@ -40,7 +40,7 @@ var HorizontalSplit = exports.HorizontalSplit = function (_React$Component) {
 
       return _react2.default.createElement(
         _bootstrap.Row,
-        { className: "neal-horizontal-split neal-horizontal-split-" + this.props.padding },
+        { className: "neal-horizontal-split neal-horizontal-split-" + this.props.padding + " " + this.props.extraClass },
         this.props.children.map(function (child, idx) {
           return _react2.default.createElement(
             _bootstrap.Col,
@@ -64,7 +64,8 @@ HorizontalSplit.COLUMN_CLASSES = {
   12: ["xs-12", "sm-6", "lg-3"]
 };
 HorizontalSplit.propTypes = {
-  padding: _react2.default.PropTypes.oneOf(["sm", "md", "lg"])
+  padding: _react2.default.PropTypes.oneOf(["sm", "md", "lg"]),
+  extraClass: _react2.default.PropTypes.string
 };
 HorizontalSplit.defaultProps = {
   padding: "sm"
