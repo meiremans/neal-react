@@ -14,6 +14,7 @@ export class HorizontalSplit extends React.Component {
 
   static propTypes = {
     padding: React.PropTypes.oneOf(["sm", "md", "lg"]),
+      extraClass : React.PropTypes.string
   };
 
   static defaultProps = {
@@ -27,7 +28,7 @@ export class HorizontalSplit extends React.Component {
     }
 
     return (
-        <Row className={`neal-horizontal-split neal-horizontal-split-${this.props.padding}`}>
+        <Row className={`neal-horizontal-split neal-horizontal-split-${this.props.padding} ${this.props.extraClass}`}>
           {this.props.children.map((child, idx) => {
             return (
               <Col size={HorizontalSplit.COLUMN_CLASSES[numSections]} className="neal-horizontal-split-col" key={idx}>
