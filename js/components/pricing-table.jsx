@@ -6,7 +6,7 @@ export class PricingTable extends React.Component {
   render() {
     return (
       <div className="neal-pricing-table">
-        <HorizontalSplit extraClass='pricing-table-split'>{this.props.children}</HorizontalSplit>
+        <HorizontalSplit extraRowClass='pricing-table-split-row' extraColumnClass='pricing-table-split-column'>{this.props.children}</HorizontalSplit>
       </div>
     );
   }

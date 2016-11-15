@@ -50,5 +50,16 @@
     padding: .5rem 0;
     margin: 0;
   }
+  .pricing-table-split-row{
+    display: flex;
+  }
+
+  .card{
+    border:none
+  }
+  .pricing-table-split-column{
+    padding-left: 0px;
+    border: 1px solid #ededed;
+  }
 
 }

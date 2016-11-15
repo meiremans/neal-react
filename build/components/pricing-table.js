@@ -42,7 +42,7 @@ var PricingTable = exports.PricingTable = function (_React$Component) {
         { className: "neal-pricing-table" },
         _react2.default.createElement(
           _index.HorizontalSplit,
-          { extraClass: "pricing-table-split" },
+          { extraRowClass: "pricing-table-split-row", extraColumnClass: "pricing-table-split-column" },
           this.props.children
         )
       );
