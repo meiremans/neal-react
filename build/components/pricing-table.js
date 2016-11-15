@@ -81,14 +81,14 @@ var PricingPlan = exports.PricingPlan = function (_React$Component2) {
             "div",
             { className: "text-xs-center neal-pricing-plan-price" },
             _react2.default.createElement(
-              "h4",
-              { className: "card-title neal-pricing-plan-price-amount" },
-              this.props.price
-            ),
-            _react2.default.createElement(
               "span",
               { className: "neal-pricing-plan-price-period" },
               this.props.period
+            ),
+            _react2.default.createElement(
+              "h4",
+              { className: "card-title neal-pricing-plan-price-amount" },
+              this.props.price
             )
           ),
           _react2.default.createElement(
@@ -140,6 +140,6 @@ PricingPlan.propTypes = {
   onClick: _react2.default.PropTypes.func
 };
 PricingPlan.defaultProps = {
-  period: "/month",
+  period: "Starting From",
   buttonText: "Sign up"
 };
