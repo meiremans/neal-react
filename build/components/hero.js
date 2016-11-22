@@ -44,10 +44,12 @@ var Hero = exports.Hero = function (_React$Component) {
                 _style.backgroundImage = "url(" + this.props.backgroundImage + ")";
             }
             var _className = (0, _classnames2.default)("neal-hero jumbotron jumbotron-fluid zoom_image", this.props.className);
+            var _classNameContent = (0, _classnames2.default)("neal-hero jumbotron jumbotron-fluid", this.props.className);
             return _react2.default.createElement(
                 "div",
                 null,
-                _react2.default.createElement("div", _extends({}, this.props, { className: _className, style: _style })),
+                _react2.default.createElement("div", { className: _className, style: _style }),
+                _react2.default.createElement("div", _extends({}, this.props, { className: _classNameContent })),
                 _react2.default.createElement(
                     _bootstrap.Container,
                     null,
