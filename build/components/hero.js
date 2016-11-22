@@ -1,7 +1,7 @@
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 exports.Hero = undefined;
 
@@ -28,37 +28,38 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Hero = exports.Hero = function (_React$Component) {
-  _inherits(Hero, _React$Component);
+    _inherits(Hero, _React$Component);
 
-  function Hero() {
-    _classCallCheck(this, Hero);
+    function Hero() {
+        _classCallCheck(this, Hero);
 
-    return _possibleConstructorReturn(this, (Hero.__proto__ || Object.getPrototypeOf(Hero)).apply(this, arguments));
-  }
-
-  _createClass(Hero, [{
-    key: "render",
-    value: function render() {
-      var _style = {};
-      if (this.props.backgroundImage) {
-        _style.backgroundImage = "url(" + this.props.backgroundImage + ")";
-      }
-      var _className = (0, _classnames2.default)("neal-hero jumbotron jumbotron-fluid", this.props.className);
-      return _react2.default.createElement(
-        "div",
-        _extends({}, this.props, { className: _className, style: _style }),
-        _react2.default.createElement(
-          _bootstrap.Container,
-          null,
-          this.props.children
-        )
-      );
+        return _possibleConstructorReturn(this, (Hero.__proto__ || Object.getPrototypeOf(Hero)).apply(this, arguments));
     }
-  }]);
 
-  return Hero;
+    _createClass(Hero, [{
+        key: "render",
+        value: function render() {
+            var _style = {};
+            if (this.props.backgroundImage) {
+                _style.backgroundImage = "url(" + this.props.backgroundImage + ")";
+            }
+            var _className = (0, _classnames2.default)("neal-hero jumbotron jumbotron-fluid zoom_image", this.props.className);
+            return _react2.default.createElement(
+                "div",
+                null,
+                _react2.default.createElement("div", _extends({}, this.props, { className: _className, style: _style })),
+                _react2.default.createElement(
+                    _bootstrap.Container,
+                    null,
+                    this.props.children
+                )
+            );
+        }
+    }]);
+
+    return Hero;
 }(_react2.default.Component);
 
 Hero.propTypes = {
-  backgroundImage: _react2.default.PropTypes.string
+    backgroundImage: _react2.default.PropTypes.string
 };
