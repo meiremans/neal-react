@@ -96,15 +96,7 @@ var PricingPlan = exports.PricingPlan = function (_React$Component2) {
             { className: "card-text text-xs-center neal-pricing-plan-description" },
             this.props.description
           ),
-          _react2.default.createElement(
-            "p",
-            { className: "card-text text-xs-center neal-pricing-plan-action" },
-            _react2.default.createElement(
-              "button",
-              { className: "btn btn-ghost btn-primary btn-lg", onClick: this.props.onClick },
-              this.props.buttonText
-            )
-          )
+          _react2.default.createElement("p", { className: "card-text text-xs-center neal-pricing-plan-action" })
         ),
         _react2.default.createElement(
           "div",
