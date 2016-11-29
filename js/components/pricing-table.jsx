@@ -43,9 +43,6 @@ export class PricingPlan extends React.Component {
           </div>
           <p className="card-text text-xs-center neal-pricing-plan-description">{this.props.description}</p>
           <p className="card-text text-xs-center neal-pricing-plan-action">
-            <button className="btn btn-ghost btn-primary btn-lg" onClick={this.props.onClick}>
-              {this.props.buttonText}
-            </button>
           </p>
         </div>
         <div className="card-block neal-pricing-plan-features">
